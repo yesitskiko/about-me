@@ -1,0 +1,214 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @font-face {
+        font-family: 'FrejaFont';
+        src: url('fonts\\contax.otf'); /* IE9 Compat Modes */
+        }
+
+        html, body {
+    max-width: 100%;
+    overflow-x: hidden;}
+        body {
+            background-image: linear-gradient(to bottom right, #4287f5, #7c3d8f);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .nice-font {
+            font-family: 'FrejaFont';
+        }
+
+        .header-link {
+            text-decoration: none !important;
+            color: inherit
+        }
+        .bbc {
+            background-color: #101010;
+            animation: MoveUpDown 3s ease-in-out infinite;
+            height: 480px;
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+
+            position: relative;
+            top: 25%;
+            border-radius: 30px;
+        }
+        @keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-70px);
+  }
+}
+        .background {
+            position : absolute;
+            display : block;
+            top : 0;
+            left : 0;
+            z-index : 0;
+        }
+        #logo {
+            height: 150px;
+
+            border-radius: 50%;
+            display: block;
+            position: relative;
+            top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .language {
+            border-radius: 5px;
+            background-color: #202520;
+            height: 20px;
+        }
+        .skill {
+            border-radius: 5px;
+            height: 20px;
+        }
+
+        .center-lang {
+            display: block;
+            margin-left: 8px;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+        .rotate {
+            animation: rotation 3s infinite ease-in-out;
+        }
+    </style>
+
+    <head>
+        <title>Freja eID</title>
+    </head>
+    <body id="body">
+        
+        <canvas class="background"></canvas>
+        <div class="bbc">
+            <img class="rotate" id="logo" src="https://i.imgur.com/BxDKU37.png" alt="">
+            <h1 class="center nice-font" style="position: relative; color: whitesmoke; font-size: 25px; top: 30px;">whozkiko</h1>
+            <h3 class="center nice-font" style="position: relative; color: gray; top: 15px; font-size: 12px;"><i>~Make the rules your bitch~</i></h3>
+            <ul style="list-style: none; padding-left: 1.5em; margin: 0; padding: 0; display: flex; flex-wrap: wrap;">
+                <li class="nice-font" style="color: whitesmoke; margin-left: 15px; margin-right: 8px;">
+                    <div class="language" style="width: 45px;">
+                        <p class="center" style="font-size: 16px;">C++</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="language" style="width: 40px;">
+                        <p class="center" style="font-size: 16px;">C#</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="language" style="width: 45px;">
+                        <p class="center" style="font-size: 16px;">Lua</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="language" style="width: 65px;">
+                        <p class="center" style="font-size: 16px;">Python</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="language" style="width: 40px;">
+                        <p class="center" style="font-size: 16px;">PHP</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="language" style="width: 45px;">
+                        <p class="center" style="font-size: 16px;">.NET</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-left: 15px; margin-right: 8px;">
+                    <div class="language" style="width: 45px;">
+                        <p class="center" style="font-size: 16px;">Java</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="language" style="width: 35px;">
+                        <p class="center" style="font-size: 16px;">JS</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="language" style="width: 75px;">
+                        <p class="center" style="font-size: 16px;">Node.JS</p>
+                    </div>
+                </li>
+            </ul>
+            <ul style="list-style: none; padding-left: 1.5em; margin: 0; padding: 0; display: flex; flex-wrap: wrap;">
+                <li class="nice-font" style="color: whitesmoke; margin-left: 15px; margin-right: 8px;">
+                    <div class="language" style="width: 45px; background-color: #5c1253;">
+                        <p class="center" style="font-size: 16px;">Web</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="skill" style="width: 140px; background-color: #6f5acc;">
+                        <p class="center" style="font-size: 16px;">Reverse Engineer</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="skill" style="width: 75px; background-color: #328c68;">
+                        <p class="center" style="font-size: 16px;">Android</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-left: 15px; margin-right: 8px;">
+                    <div class="skill" style="width: 80px; background-color: #32568c;">
+                        <p class="center" style="font-size: 16px;">Windows</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="skill" style="width: 40px; background-color: #b2c257;">
+                        <p class="center" style="font-size: 16px;">iOS</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="skill" style="width: 80px; background-color: #c26757;">
+                        <p class="center" style="font-size: 16px;">Designer</p>
+                    </div>
+                </li>
+            </ul>
+            <p class="nice-font" style="font-size: 12; margin-left: 15px; color: rgb(200,200,200);">I can fake anything, literally anything. Is it good or bad, I don't know. But it's a skill that not many people have.</p>
+            <ul style="list-style: none; position: relative; top: -15px; padding-left: 1.5em; margin: 0; padding: 0; display: flex; flex-wrap: wrap;">
+                <li class="nice-font" style="color: whitesmoke; margin-left: 15px; margin-right: 8px;">
+                    <div class="language" style="width: 80px; background-color: #c057c2;">
+                        <p class="center" style="font-size: 16px;">Religious️</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="skill" style="width: 125px; background-color: #8d57c2;">
+                        <p class="center" style="font-size: 16px;">Anti-vegeterian</p>
+                    </div>
+                </li>
+                <li class="nice-font" style="color: whitesmoke; margin-right: 8px;">
+                    <div class="skill" style="width: 70px; background-color: #6557c2;">
+                        <p class="center" style="font-size: 16px;">Relaxed</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+       
+    </script>
+</html>
